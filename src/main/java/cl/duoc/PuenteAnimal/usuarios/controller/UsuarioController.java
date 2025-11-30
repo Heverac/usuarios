@@ -19,7 +19,7 @@ public class UsuarioController {
         return usuarioService.findAll();
     }
     @GetMapping("/{id}")
-    public Usuario findById(int id){
+    public Usuario findById(@PathVariable Integer id){
         return usuarioService.findById(id);
     }
     @PostMapping
@@ -30,4 +30,9 @@ public class UsuarioController {
     public Usuario update(@PathVariable Integer id,@RequestBody Usuario usuario){
         return usuarioService.update(id, usuario);
     }
+    @DeleteMapping("/{id}")
+    public void delete(@PathVariable Integer id){
+        usuarioService.delete(id);
+    }
+
 }

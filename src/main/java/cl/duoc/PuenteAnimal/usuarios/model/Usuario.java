@@ -29,6 +29,7 @@ public class Usuario {
 
     @Column
     private String direccion;
-
+    @Column
+    private Boolean admin;
 
 }
