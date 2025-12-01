@@ -33,10 +33,10 @@ public class DataLoader implements CommandLineRunner {
 
         Usuario user = new Usuario();
         user.setNombreUsuario("user");
-        user.setNombre("Usuario Normal");
-        user.setEmail("user@ecomarket.cl");
+        user.setNombre("Lucas Barrios");
+        user.setEmail("LB8@gmail.cl");
         user.setPassword("user123");
-        user.setDireccion("Dirección usuario");
+        user.setDireccion("Antonio Varas 666");
         user.setAdmin(false);
 
         usuarioRepository.save(admin);
